@@ -1,7 +1,7 @@
 {
-    "Hi": "Greeting",
-    "No": "Rejection",
-    "Answer": "Response",
-    "Like": "Enjoy",
-    "Use": "To use"
+    "yes": "no",
+    "hey": "no",
+    "po": "no",
+    "ui": "user",
+    "drag": "push"
 }

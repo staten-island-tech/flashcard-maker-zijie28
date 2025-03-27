@@ -3,7 +3,7 @@ flash_cards = open("./FlashCards.json", encoding="utf8")
 data = json.load(flash_cards)
 correct_num=0
 streak=0
-print(data)
+
 for word, answer in data.items():
     ans = input(f"What does {word} mean?")
     if ans.lower() == answer.lower():

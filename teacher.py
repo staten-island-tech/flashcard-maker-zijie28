@@ -1,5 +1,9 @@
 import json
-global_list = {}
+try:
+    with open("FlashCards.json", "r") as file:
+        global_list = json.load(file)
+except FileNotFoundError:
+    global_list=[]
 class Teacher_Mode:
     def __init__(self, word, answer):
         self.word = word
@@ -15,6 +19,7 @@ num = int(input("How many words/answer would you like to input?"))
 for i in range(num):
     words=Teacher_Mode(input("Can you input a word?"), input("Can you input an answer for the word?"))
     words.inputs()
+
 
 def write_to_json(words):
     with open("FlashCards.json", "w") as file:
